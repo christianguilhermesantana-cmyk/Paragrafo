@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragrafo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="um">
+            <textarea id="texto" placeholder="Digite algo Max:100 caracteres" maxlength="100"></textarea>
+        </div>
+        <div class="dois">
+            <p>Tamanho fonte:</p>
+            <input type="number" id="tamanho" value="24">
+
+            <p>Fonte</p>
+            <select id="fonte">
+                <option value="serif">Serif</option>
+                <option value="sans-serif">sans-serif</option>
+            </select>
+
+            <p>Cor</p>
+            <select id="cor">
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+            </select>
+
+            <p>Velocidade</p>
+            <input type="number" id="velocidade" value="50" min="0" max="1000">
+
+            <button class="btn-escrever">Escrever</button>
+        </div>
+    </div>
+
+    <div class="preview">
+            <h3>Preview</h3>
+            <p class="preview-text"></p>
+    </div>
+
+    <div class="saida">
+       <span>|</span>
+    </div>
+</body>
+</html>
