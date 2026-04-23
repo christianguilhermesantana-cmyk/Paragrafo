@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+        background-color: aqua;
+}
+
+.container {
+    display: flex;
+    background-color: aqua;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 10vh;
+}
+
+.um {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+#texto {
+    height: 90%;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.dois {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dois input, .dois select, .dois button {
+    height: auto;
+    max-width: 50%;
+}
+
+textarea {
+    margin: 10px;
+    padding: 2%;
+}
+
+.preview{
+    margin-top: 3%;
+    border: 1px solid rgb(156, 156, 156);
+    height: 10vh;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+}
+
+.saida {
+   margin-top: 2vh;
+   height: 10vh;
+   border: 1px solid black;
+   min-height: 10vh; 
+   height: auto;
+   padding: 10px;
+}
+
+span {
+    animation: piscador 1s infinite;
+}
+
+@keyframes piscador {
+    50% {
+        opacity: 0;
+    }
+}
